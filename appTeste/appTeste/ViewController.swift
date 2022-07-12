@@ -73,7 +73,7 @@ class ViewController: UIViewController {
 //                print("deu mo ruim ")
 //            }
 
-         //MARK: - APLICANDO FILTRO AO EXIBIR BANCO
+         //MARK: - APLICANDO FILTRO
 //            let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Cervejaria")
 //
 //            // add ordenacao nome
@@ -119,6 +119,68 @@ class ViewController: UIViewController {
 //                print("deu mo ruim ")
 //            }
         
+        //MARK: - Deletar BANCO
+//            let keyString = "nome"
+//            let argumentString = "Cervejaria 1"
+//            let predicate = NSPredicate(format: "\(keyString) == %@", argumentString)
+//
+//            let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Cervejaria")
+//            requisicao.predicate = predicate
+//
+//            do{
+//                let cervejarias = try context.fetch(requisicao)
+//
+//                if cervejarias.count > 0 {
+//
+//                    for cervejaria in cervejarias as! [NSManagedObject]{
+//
+//                        context.delete(cervejaria)
+//                        do {
+//                            try context.save()
+//                            print("Deu bom ao deletar")
+//                        } catch {
+//                            print("Deu ruim ao deletar")
+//                        }
+//                    }
+//
+//                } else {
+//                    print("Bro, banco da vazio")
+//                }
+//
+//            } catch {
+//                print("deu mo ruim ")
+//            }
+        //MARK: - Atualizar BANCO
+//            let keyString = "nome"
+//            let argumentString = "Restaurante 1"
+//            let predicate = NSPredicate(format: "\(keyString) == %@", argumentString)
+//
+//            let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Cervejaria")
+//            requisicao.predicate = predicate
+//
+//            do{
+//                let cervejarias = try context.fetch(requisicao)
+//
+//                if cervejarias.count > 0 {
+//
+//                    for cervejaria in cervejarias as! [NSManagedObject]{
+//
+//                        cervejaria.setValue("Restaurante ATUALIZADO", forKey: "nome")
+//                        do {
+//                            try context.save()
+//                            print("Deu bom ao att")
+//                        } catch {
+//                            print("Deu ruim ao att")
+//                        }
+//                    }
+//
+//                } else {
+//                    print("Bro, banco da vazio")
+//                }
+//
+//            } catch {
+//                print("deu mo ruim ")
+//            }
     }
 
 }
